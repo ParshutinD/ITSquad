@@ -1,0 +1,23 @@
+.team_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.team__col:last-child {
+  max-width: 750px;
+}
+
+.team__discription {
+  padding-top: 70px;
+}
+
+.team__subtitle {
+  padding-bottom: 0;
+}
+
+.team__col:first-child {
+  @include lg-block {
+    display: none;
+  }
+}

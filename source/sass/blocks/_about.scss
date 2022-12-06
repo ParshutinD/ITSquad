@@ -1,0 +1,30 @@
+.about {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include lg-block {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.about__col {
+  max-width: 570px;
+}
+
+.about__donate {
+  color: $color_grey;
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+
+  @include sm-block {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

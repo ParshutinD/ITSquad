@@ -1,0 +1,42 @@
+.numbers__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid $color_border;
+  span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: $color_grey;
+  }
+
+  @include sm-block {
+    padding-left: 90px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 10px;
+  }
+
+  &:nth-child(odd) {
+    text-align: end;
+
+    @include sm-block {
+      text-align: start;
+    }
+  }
+}
+
+.numbers__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+
+  @include sm-block {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+}

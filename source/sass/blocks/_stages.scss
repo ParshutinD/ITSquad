@@ -1,0 +1,44 @@
+.stages__discription {
+  max-width: 670px;
+}
+
+.stages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  counter-reset: number 0;
+
+  @include sm-block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+.stages__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  padding-left: 50px;
+  padding-top: 50px;
+  border-top: 1px solid $color_border;
+
+  position: relative;
+  counter-increment: number;
+
+  &::before {
+    content: "0" counter(number) "/";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color_grey;
+  }
+}

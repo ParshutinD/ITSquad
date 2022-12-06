@@ -1,0 +1,52 @@
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 52px;
+  }
+}
+
+.header__logo {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: $color_grey;
+
+  span {
+    font-style: italic;
+  }
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+
+  @include sm-block {
+    display: none;
+  }
+}
+
+.header__btn {
+  width: 19px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+
+  span {
+    display: block;
+    background-color: $color_white;
+    height: 1px;
+  }
+
+  @include sm-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,12 @@
+.consultation {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include sm-block {
+      align-items: flex-start;
+    }
+  }
+}

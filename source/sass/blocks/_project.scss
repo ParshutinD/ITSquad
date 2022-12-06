@@ -1,0 +1,126 @@
+.project__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding: 40px 0;
+  border-top: 1px solid $color_border;
+  border-bottom: 1px solid $color_border;
+  cursor: pointer;
+  position: relative;
+
+  @include sm-block {
+    padding: 20px 0;
+  }
+
+  .project__item-img {
+    filter: grayscale(1);
+    position: absolute;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $color_primary;
+
+    svg line {
+      stroke: $color_primary;
+    }
+
+    .project__item-img {
+      filter: grayscale(0);
+    }
+  }
+
+  &:nth-child(1) {
+    .project__item-img {
+      left: 445px;
+      width: 346px;
+      height: 167px;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+
+      @include lg-block {
+        width: 172px;
+        height: 83px;
+        left: 200px;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    .project__item-img {
+      left: 545px;
+      width: 324px;
+      height: 167px;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+
+      @include lg-block {
+        width: 161px;
+        height: 83px;
+        left: 200px;
+        transform: matrix(1, 0.03, -0.03, 1, 0, 0);
+      }
+    }
+  }
+
+  &:nth-child(5) {
+    .project__item-img {
+      width: 455px;
+      height: 167px;
+      left: 545px;
+
+      @include lg-block {
+        width: 226px;
+        height: 83px;
+        left:150px;
+      }
+    }
+  }
+
+  &:nth-child(7) {
+    .project__item-img {
+      width: 224px;
+      height: 167px;
+      left: 650px;
+
+      @include lg-block {
+        width: 111px;
+        height: 83px;
+        left: 200px;
+      }
+    }
+  }
+
+  &:nth-child(9) {
+    .project__item-img {
+      width: 346px;
+      height: 167px;
+      left: 450px;
+
+      @include lg-block {
+        width: 172px;
+        height: 83px;
+        left: 200px;
+        transform: matrix(1, -0.03, 0.03, 1, 0, 0);
+      }
+    }
+  }
+
+  &:nth-child(11) {
+    .project__item-img {
+      width: 355px;
+      height: 167px;
+      left: 750px;
+
+      @include lg-block {
+        width: 176px;
+        height: 83px;
+        left: 200px;
+        
+      }
+    }
+  }
+}
