@@ -196,7 +196,10 @@ html::-webkit-scrollbar-track {
   padding-bottom: 60px; }
   @media (max-width: 767px) {
     .hero__img {
-      padding-bottom: 30px; } }
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
 
 .hero__nav {
   display: flex;
@@ -395,7 +398,7 @@ html::-webkit-scrollbar-track {
         height: 80px;
         left: 250px; } }
   .services__item:nth-child(5) .services__item-img {
-    left: 700px;
+    left: 300px;
     width: 231px;
     height: 167px; }
     @media (max-width: 767px) {
@@ -618,9 +621,6 @@ html::-webkit-scrollbar-track {
 .header-list {
   display: flex;
   gap: 40px; }
-  @media (max-width: 767px) {
-    .header-list {
-      display: none; } }
 
 .header__btn {
   width: 19px;
